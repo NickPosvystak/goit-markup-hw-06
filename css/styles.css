@@ -708,6 +708,7 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   text-align: center;
   letter-spacing: 0.04em;
