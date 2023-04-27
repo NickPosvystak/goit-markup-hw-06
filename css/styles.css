@@ -833,6 +833,76 @@ input::placeholder {
 
 /**
   |============================
+  | Booking form
+  |============================
+*/
+.modal-form {
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+.booking-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--color-navy-blue);
+}
+.book-title {
+  display: block;
+}
+
+.book-name {
+ 
+  position: relative;
+
+  /* border: 1px solid #4D5AE5; */
+border-radius: 4px;
+}
+.icon-name {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+.book-phone {
+}
+.icon-tel {
+}
+.book-email {
+}
+.icon-email {
+}
+.book-text {
+ padding: 8px 16px;
+
+  width: 360px;
+  height: 138px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: rgba(46, 47, 66, 0.4);
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+.textarea::placeholder {
+}
+
+.book-btn {
+}
+
+/**
+  |============================
   | Portfolio
   |============================
 */
