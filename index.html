@@ -667,21 +667,23 @@
                 placeholder="Text input"
               ></textarea>
             
-            <label class="modal-form-agreement" for="agreement">
-              <input
-                class="modal-form-agreement-box"
-                type="checkbox"
-                name="privacy-policy"
-                id="agreement"
-              />
-              <svg class="check-icon" width="16" height="16">
-                <use href="./images/icon.svg#icon-Vector"></use>
-              </svg>
+            <label class="modal-form-agreement" for="agreement"></label>
+              <div class="modal-form-check">
+                <input
+                  class="modal-form-agreement-box"
+                  type="checkbox"
+                  name="privacy-policy"
+                  id="agreement"
+                />
+                <svg class="check-icon" width="16" height="16">
+                  <use href="./images/icon.svg#icon-Vector"></use>
+                </svg>
+              
               <span class="modal-form-agreement-text"
                 >I accept the terms and conditions of the
-                <a href="">Privacy Policy</a>
+                <a class="modal-form-link" href="">Privacy Policy</a>
               </span>
-            </label>
+            </div>
             <button type="submit" class="modal-send-btn">Send</button>
           </form>
         </div>

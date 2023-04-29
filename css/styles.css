@@ -865,6 +865,8 @@ input::placeholder {
   letter-spacing: 0.04em;
 
   color: var(--color-slate);
+
+
 }
 .modal-form-field {
   position: relative;
@@ -943,13 +945,44 @@ input::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-agreement {
+
   display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 .modal-form-agreement-box {
+  appearance: none;
+
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  outline: none;
+
+  background-color: var(--color-white);
+
+  transition-property: border, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-agreement-box:hover,
+.modal-form-agreement-box:focus {
+  border: 1px solid var(--color-iris);
+}
+
+.modal-form-agreement-box:checked {
+  background-color: var(--color-ocean);
+  border-color: var(--color-ocean);
+ 
+}
+
+.modal-form-agreement-box:focus + .check-icon {
+  fill: var(--color-ocean);
 }
 .modal-form-agreement-text {
-  margin-bottom: 24px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -958,8 +991,29 @@ input::placeholder {
 
   color: var(--color-light-slate);
 }
-.check-icon {
+.modal-form-check {
+  position: relative;
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
 }
+.check-icon {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  cursor: pointer;
+  pointer-events: none;
+
+  width: 10px;
+  outline: none;
+}
+.modal-form-link {
+  color: var(--color-iris);
+}
+
 .modal-send-btn {
   width: 169px;
   height: 56px;
@@ -972,6 +1026,7 @@ input::placeholder {
   letter-spacing: 0.04em;
 
   color: var(--color-white);
+  cursor: pointer;
 
   background-color: var(--color-iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
